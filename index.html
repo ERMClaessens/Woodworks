@@ -1,0 +1,265 @@
+<!DOCTYPE htlm>
+<html lang="en"> <!--ensures usage of lastest html version + language-->
+
+<!------------------------------------------------------------------------------->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--this code is used to control edge rendering mode as edge doesn't follow web standards more consistently-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ensures proper scaling on mobile devices-->
+    
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+
+    <!-- Remix Icon-->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+
+    <!--Personal sheet-->  
+    <link rel="stylesheet" href="style.css">
+
+    <title>Eleonora C. WoodWorking</title>
+
+    <!--emailjs-->
+    <script type="text/javascript" 
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('IyWorBnSUtJvVcL9N');
+        })();
+    </script>
+
+
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+
+
+<!------------------------------------------------------------------------------->
+
+    <body>
+
+        <!--------------------------------Homepage Video----------------------------------------------->
+        <video autoplay muted loop plays-inline id="home_video">
+            <source src="./Videos/SnackBoard_1_video_1to1ratio.mp4" type="video/mp4">
+        </video>
+
+
+
+        <header>
+            <!--Navigation Bar-->
+            <div class="navbar"> <!-- div is used as a container for a group of html elements-->
+                <!--Logo-->
+                <div class="logo_container">
+                    <img src="./Images/logo_version2.22_3_white_no_letters.png" class="logo_img">
+                    <div class="logo"><a href="#home">EC WoodWorking</a></div>
+                </div>
+
+
+                <!--links-->
+                <ul class="links"> <!--ul=unordered list-->
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#work">My Work</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                </ul>
+
+                <!--toggle-->
+                <div class="toggle_btn"> <!--In this case I'm adding a toggle button-->
+                    <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!--Dropdown Menu-->
+            <div class="dropdown_menu">
+                <li> <a href="#about" class="dropdown-link">About</a></li>
+                <li> <a href="#work" class="dropdown-link">My Work</a></li>
+                <li> <a href="#contact" class="dropdown-link">Contact</a></li>   
+            </div>
+        </header>
+
+
+
+        <main>
+            <!--HOME-->
+            <section id="home">
+                <div class="content"> 
+                    <h1>Longmont, Colorado Small Shop Woodcrafter</h1>
+                    <p></p>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!--ABOUT-->
+            <section id="about">
+                <div class="main">
+                    <img src="./">
+                    <div class="text">
+                        <h1>b</h1>
+                        <h2> After </h2>
+                        <p>l </p>
+                        <p>&nbsp;</p> 
+                    </div>
+                </div> 
+            </section>
+            
+
+
+            <!--WORK-->
+            <section id="work">
+                <h1>My Work</h1>
+                <p> My typical projects are created with confidentiality in mind. <br> 
+                    As this makes it harder to display my work, I've created some example projects to show my range. </p>
+                <div class="container">
+                    <div class="color_container">
+                        <div class="detail_container">
+                            <div class="project">
+                                <img src="Images/DataCleaning3.png">
+                                <p> Data Cleaning </p>
+                                <div class="full_link black">
+                                    <a href="https://docs.google.com/spreadsheets/d/1qSI3oRIEhTV6elAl7DSAxB6Snq_ch424BqRcD4A_QX4/edit?pli=1#gid=1421983324" target="_blank">
+                                    <p> Google Sheets </p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="color_container">
+                        <div class="detail_container">
+                            <div class="project">
+                                <img src="./Images/map.png"> 
+                                <p>Data Analysis & Data Visualization</p>
+                                <div class="half_link left black">
+                                    <a href="https://github.com/ERMClaessens/Forest_Area_Internationally_2024.0125" target="_blank">
+                                    <p>Github</p>
+                                    </a>
+                                </div>
+                                <div class="half_link right black">
+                                    <a href="https://ermclaessens.github.io/" target="_blank">
+                                    <p>Coming Soon</p>
+                                    </a>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>  
+                
+                    <div class="color_container">
+                        <div class="detail_container">
+                            <div class="project">
+                                <img src="./Images/WebsiteMain.png">
+                                <p>HTML & CSS</p>
+                                <div class="half_link left white">
+                                    <a href="https://github.com/ERMClaessens/ermclaessens.github.io" target="_blank">
+                                    <p>Github</p>
+                                    </a>
+                                </div>
+                                <div class="half_link right white">
+                                    <a href="https://ermclaessens.github.io/" target="_blank">
+                                    <p>Website</p>
+                                    </a>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>    
+
+            </section>
+
+
+            <!--Contact-->
+            <section id="contact">
+                <div class="contact_form">
+                    <div class="header"> <!--temp edit to overlay under construction!!!!-->
+                        <h1> Contact Me </h1>
+                        <h1 class="overlay-text"><i>Under Construction</i></h1>
+                    </div>
+                    <p> For any questions you might have or to hire me as a freelancer.</p>
+                    <form id="contact-form" action="" > <!--form id="contact-form"-->
+                        <input type="" placeholder="First and Last Name" required>
+                        <input type="email" name="email" id="" placeholder="E-mail" required>
+                        <input type="" placeholder="Add a Subject" required>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your message" required></textarea>
+                        <input type="submit" value="Submit" class="submit_btn">
+                    </form>
+                </div>
+                <div class="contact_img">
+                    <img src="./Photoshop/GIF/animated_contact_v3_noleaf.gif">
+                </div>
+            </section>
+        </main>
+
+        <!--copyright -->
+        <footer>
+                <p>&copy; 2023 Eleonora Claessens |
+                    <a href="https://www.linkedin.com/in/eleonora-claessens-b477b9116/" class="linkedin">
+                    <i class="ri-linkedin-box-fill"></i> </a> </p>
+        </footer>
+
+
+
+<!------------------------------------------------------------------------------->
+
+
+<!--JAVASCRIPT-->
+        <script> 
+            //DROP DOWN MENU
+            const toggle_button = document.querySelector('.toggle_btn');
+            const toggle_button_icon = document.querySelector('.toggle_btn i');
+            const dropdownmenu = document.querySelector('.dropdown_menu');
+
+            toggle_button.onclick = function() {
+                dropdownmenu.classList.toggle('open');
+                updateToggleButtonIcon();
+            };
+        
+            function updateToggleButtonIcon() {
+                const isOpen = dropdownmenu.classList.contains('open');
+                toggle_button_icon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
+            }
+        
+            // Close dropdown
+            document.addEventListener("DOMContentLoaded", function() {
+                var dropdownLinks = document.querySelectorAll('.dropdown_menu .dropdown-link');
+            
+                dropdownLinks.forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        dropdownmenu.classList.remove('open');
+                        updateToggleButtonIcon(); // Update the icon when the menu is closed
+                    });
+                });
+            });
+
+        </script>
+
+
+
+
+
+
+<!------------------------------------------------------------------------------->
+
+
+
+
+    </body>
+
+</html>
