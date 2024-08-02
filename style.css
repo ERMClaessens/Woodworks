@@ -142,6 +142,23 @@ header {
     .dropdown_menu {
         display: block;
     }
+
+    .logo_img{
+        margin-right: 0;
+    }
+
+
+    }    
+    .logo a{
+        font-size: 1rem;
+    }
+
+    .navbar {
+        padding-left: 10%;
+        padding-right: 20%;
+    }    
+
+    
 }
 
 /*if on phone: make the window smaller*/
@@ -168,7 +185,11 @@ header {
 
 
 
-
+/*@media (max-width: 576px) {
+    section#home_video {
+        width: 100%;
+    }
+}*/
 
 /* --------------------------------------HOME----------------------------------------------*/
 section#home {
@@ -248,6 +269,7 @@ section#about .text {
     padding: 5%;
 }
 
+
 /*----------------------ABOUT RESPONSIVE DESIGN------------------------*/
 @media (max-width: 576px) {
     
@@ -298,6 +320,14 @@ section#work {
     justify-content: center;
     text-align: center;
 }
+
+section#work .heading h1 {
+    color:#fff;
+    margin-top: 3rem;
+    font-size: 2rem;
+
+}
+
 
 
 section#work .box_container .box img {
