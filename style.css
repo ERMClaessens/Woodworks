@@ -46,7 +46,7 @@ header {
 /*--------------------NAVIGATION BAR----------------------------*/
 .navbar {
     width: 100%;
-    height: 53px;
+    height: 70px; /*previously 53*/
     /*max-width: 1200px;*/
     margin:0 auto;
     display: flex;
@@ -160,12 +160,10 @@ header {
 #home_video {
     position:absolute;
     z-index: 0; /*background*/
-    height: calc(100vh);
+    height: calc(80vh);
     left: 50%;
     top: 50%;
     transform:translate(-50%, -50%);
-
-
 }
 
 /* --------------------------------------HOME----------------------------------------------*/
@@ -177,17 +175,29 @@ section#home {
     justify-content: center;
     text-align: center;
     color:#fff;
-    background-color: #000;
+    background: linear-gradient(to bottom, #000000 0%, #12182b 100%);
 }
 
 .content{
     z-index: 1;
 }
 
+section#home h1{
+    font-size: 2.5rem;
+    color:#ffffff;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
 @media (max-width: 576px) {
     .home_video{
         width: auto;
         height: 100%;
+    }
+    section#home h1{
+        font-size: 1.5rem;
     }
 }
 
@@ -324,7 +334,6 @@ section#work .project{
 section#work .color_container {
     border: 3px solid #424242;
     background: linear-gradient(to bottom, #000 85%, #424242 100%);
-
 }
 
 section#work .detail_container img{
