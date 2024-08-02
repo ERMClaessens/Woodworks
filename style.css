@@ -106,7 +106,7 @@ header {
     height: 0px;
     right: 3rem;
     top: 60px;
-    width: 110px;
+    width: 105px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
     border-radius: 10px;
@@ -119,10 +119,10 @@ header {
 }
 
 .dropdown_menu li {
-    padding: 0.7rem;
+    padding: 0.7rem; /*OG 0.7rem*/
     display: flex;
     align-items: center;
-    justify-content: left; /*center*/
+    justify-content: center; /*OG center*/
 }
 
 
