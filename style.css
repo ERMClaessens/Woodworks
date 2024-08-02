@@ -213,7 +213,6 @@ section#about {
 
     color:#000000;
     background: linear-gradient(to bottom, #ffffff 0%, #c7d3dd 100%);
-
 }
 
 section#about .main {
@@ -291,6 +290,13 @@ section#about .text {
 
 section#work {
     background: linear-gradient(to bottom, #06080e 0%, #12182b 100%);
+    
+    min-height: calc(100vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 
@@ -335,6 +341,7 @@ section#work .box_container .box .price span {
     font-size: 1.5rem;
     text-decoration: line-through;
 }
+
 
 
 /*--------------hover/Interactive------------*/
