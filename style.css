@@ -184,13 +184,6 @@ header {
 }
 
 
-
-/*@media (max-width: 576px) {
-    section#home_video {
-        width: 100%;
-    }
-}*/
-
 /* --------------------------------------HOME----------------------------------------------*/
 section#home {
     height: calc(100vh);
