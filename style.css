@@ -204,6 +204,8 @@ section#home h1{
     text-align: center;
     padding-left: 2rem;
     padding-right: 2rem;
+    text-shadow: 2px 2px 5px rgb(117, 117, 119);
+
 }
 
 
@@ -297,8 +299,9 @@ section#about .text {
 
 section#work {
     background: linear-gradient(to bottom, #06080e 0%, #12182b 100%);
-    
-    min-height: calc(100vh);
+}
+
+section#work .heading {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -308,8 +311,11 @@ section#work {
 
 section#work .heading h1 {
     color:#fff;
-    margin-top: 3rem;
-    font-size: 2rem;
+    margin-top: 5rem;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    text-shadow: 2px 2px 5px rgb(61, 61, 61);
+
 
 }
 
