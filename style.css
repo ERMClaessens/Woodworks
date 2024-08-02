@@ -145,6 +145,7 @@ header {
 
     .logo_img{
         margin-right: 0;
+        /*display: none;*/
     }
 
 
@@ -152,7 +153,7 @@ header {
     .logo a{
         font-size: 1rem;
     }
-
+ 
     .navbar {
         padding-left: 10%;
         padding-right: 20%;
@@ -181,7 +182,11 @@ header {
     left: 50%;
     top: 50%;
     transform:translate(-50%, -50%);
+    width: 100%;
 }
+
+
+
 
 
 /* --------------------------------------HOME----------------------------------------------*/
