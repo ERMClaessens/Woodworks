@@ -286,159 +286,72 @@ section#about .text {
 
 
 /* --------------------------------------WORK----------------------------------------------*/
+
+
+
 section#work {
-    min-height: calc(100vh);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     background: linear-gradient(to bottom, #06080e 0%, #12182b 100%);
 }
 
-section#work h1,
-section#work p {
+
+section#work .box_container .box img {
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+section#work .box_container { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+
+section#work .box_container .box { 
+    padding: 5rem;
+    text-align: center;
+    border:var(--border);
+}
+
+
+section#work .box_container .box img { 
+    height: 10rem;
+}
+
+section#work .box_container .box h3 {
     color:#fff;
-    margin-bottom: 4rem;
-    max-width: 80%;
+    font-size: 2rem;
+    padding: 1rem 0;
 }
 
-section#work h1 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    text-shadow: 2px 2px 5px rgb(5, 5, 5);
+section#work .box_container .box .price {
+    color:#fff;
+    font-size: 2.5rem;
+    padding: 5rem 0;
 }
 
-section#work .container { 
-    max-width: 95%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap; 
-    margin: 0 auto;
-    gap: 2rem;
-}
-
-section#work .color_container, 
-section#work .detail_container,
-section#work .project{
-    height: 20rem;
-    width: 21rem;
-    margin: 0 auto;
-    justify-content: space-around;
-    overflow: hidden;
-    position:relative;
-}
-
-
-section#work .color_container {
-    border: 3px solid #424242;
-    background: linear-gradient(to bottom, #000 85%, #424242 100%);
-}
-
-section#work .detail_container img{
-    width: 100%;
-    height: 77%;
-}
-
-section#work .detail_container p {
+section#work .box_container .box .price span {
+    color:#fff;
     font-size: 1.5rem;
-    margin-top:1rem;
-    color:#ffffff;
-    font-weight: bold;
-    max-width: 100%;
+    text-decoration: line-through;
 }
-
-section#work .full_link.black p,
-section#work .half_link.black p {
-    color:#000000;
-}
-section#work .full_link.white p,
-section#work .half_link.white p  {
-    color:#ffffff;
-}
-
-
-
-
-/*half and full links*/
-
-section#work .half_link,
-section#work .full_link{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 10;
-    cursor: pointer;
-}
-
-section#work .full_link{
-    width: 100%;
-}
-
-section#work .half_link{
-    width: 50%;
-}
-
-.half_link.left {
-    left: 0;
-}
-
-.half_link.right {
-    right: 0;
-}
-
-
-.half_link a,
-.full_link a {
-    opacity: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-align: center; 
-    /*vertical-align: middle;*/
-    line-height: 200px;
-}
-
-
-
-
-
-
 
 
 /*--------------hover/Interactive------------*/
 
-section#work .color_container:hover, 
-section#work .detail_container:hover {
-    transform: scale(1.01);
-    transition: transform 0.2s ease-in-out;
-    opacity: 0.9; 
+section#work .box_container .box:hover{
+    background:#fff;
 }
 
-
-/*half hover*/
-.half_link:hover,
-.full_link:hover {
-    background-color: rgba(0, 0, 0, 0.1); 
+section#work .box_container .box:hover > *{
+    color:var(--black);
 }
-
-section#work .detail_container .half_link:hover a,
-section#work .detail_container .full_link:hover a{
-    opacity: 1;
-    transition: opacity 0.1s ease;
-}
-
-
-
-
 
 
 
 
 /*----------------------WORK RESPONSIVE DESIGN------------------------*/
-
+/*
 
 @media (max-width: 800px) {
     
@@ -481,41 +394,6 @@ section#work .detail_container .full_link:hover a{
     }
 
     
-    /*
-    
-    section#work .full_link.black p,
-    section#work .half_link.black p,
-    section#work .full_link.white p,
-    section#work .half_link.white p  {
-        color:#ffffff;
-    }
-
-
-    Previous code:
-    
-    section#work {
-        height: auto;
-        padding: 4rem 0; 
-    }
-
-    section#work .color_container, 
-    section#work .detail_container {
-    height: 6rem;
-    width: auto;
-    position: relative;
-    }
-
-    section#work .detail_container p {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: 0;
-    }
-
-    section#work .project p {
-        font-size: 20px;
-    }*/
 
 }
 
@@ -560,6 +438,8 @@ section#work .detail_container .full_link:hover a{
     }
 }
 
+
+*/
 
 /* --------------------------------------CONTACT----------------------------------------------*/
 section#contact {
