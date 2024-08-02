@@ -212,7 +212,8 @@ section#about {
     text-align: center;
 
     color:#000000;
-    background: linear-gradient(to bottom, #dbdfe7 0%, #edf3f8 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #c7d3dd 100%);
+
 }
 
 section#about .main {
@@ -566,7 +567,7 @@ section#contact {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #0d1b2a 0%, #1a2c3a 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #c7d3dd 100%);
     padding: 40px 15%;
 }
 
@@ -730,7 +731,8 @@ footer {
     background: linear-gradient(to bottom, #0d1b2a 0%, #1a2c3a 100%);
 }
 
-footer .linkedin {
+/*footer .logo_img_foot {
     vertical-align: middle;
-    font-size: 18px;
-}
+    width: 20px;
+    height: auto;
+}*/
