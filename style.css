@@ -166,6 +166,10 @@ header {
     transform:translate(-50%, -50%);
 }
 
+
+
+
+
 /* --------------------------------------HOME----------------------------------------------*/
 section#home {
     height: calc(100vh);
@@ -192,10 +196,6 @@ section#home h1{
 
 
 @media (max-width: 576px) {
-    .home_video{
-        width: auto;
-        height: 100%;
-    }
     section#home h1{
         font-size: 1.5rem;
     }
