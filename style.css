@@ -148,17 +148,10 @@ header {
         /*display: none;*/
     }
 
-
-    }    
     .logo a{
         font-size: 1rem;
     }
- 
-    .navbar {
-        padding-left: 10%;
-        padding-right: 20%;
-    }    
-
+  
     
 }
 
@@ -213,12 +206,6 @@ section#home h1{
     padding-right: 2rem;
 }
 
-
-@media (max-width: 576px) {
-    section#home h1{
-        font-size: 1.5rem;
-    }
-}
 
 
 /* --------------------------------------ABOUT----------------------------------------------*/
